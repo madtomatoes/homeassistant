@@ -112,7 +112,6 @@ action:
             \ and timed_out %}\n      {% set ns.not_playing = ns.not_playing + [ player.entity_id\
             \ ] %}\n    {% endif %}\n  {% endfor %}\n{% endfor %} {{ ns.not_playing | length\
             \ >= media_players | length }}\n"
-          - "{{ not in_room }}"
         sequence:
           - service: input_boolean.turn_off
             data:
