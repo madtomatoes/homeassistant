@@ -1,5 +1,6 @@
 blueprint:
   name: "Motion Media Occupancy"
+  description: "Motion Media Occupancy Blueprint"
   domain: automation
   input:
     occupied_on_motion_enabled:
