@@ -46,7 +46,7 @@ blueprint:
       selector:
         entity:
           domain: input_boolean
-  source_url: https://github.com/kreene1987/automatic-room-occupancy/blob/main/automatic-room-occupancy.yaml
+  source_url: https://github.com/madtomatoes/homeassistant/blob/main/motion_media_occupancy.yaml
 variables:
   time_now: "{{ as_timestamp(now()) }}"
   media_players_str: !input "media_players"
