@@ -83,9 +83,6 @@ trigger:
       minutes: "{{ states('input_number.motion_occupancy_timeout') | int(10) }}"
   - platform: state
     entity_id: !input "media_players"
-  - platform: state
-    entity_id: !input "presence_entities"
-    from:
 action:
   - choose:
       - conditions:
